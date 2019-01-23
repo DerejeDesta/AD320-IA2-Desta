@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+		<title>Dereje Desta</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="formValidation.js"></script>
+		<!--Remy Sharp Shim --> 
+		<!--[if lte IE 9]> 
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript" >
+		</script> 
+		<![endif]-->
+	</head>
+    <body>
+    <div class="container">
+	<form id="form" action="index2.php" method="get" onsubmit="return validation();">
+	<h3>Register for AD 320</h3>
+    <h4>register today, and save a spot for this class !</h4>	
+		<fieldset><input name="name" placeholder="Your name" type="text" ></fieldset>
+
+   	    <fieldset><input name="email" placeholder="Your email" type="email"></fieldset>
+
+		<fieldset><input name="phone" placeholder="Your Phone Number" type="tel"></fieldset>
+
+		<fieldset><input name="state" placeholder="State" type="text"></fieldset>
+
+		<fieldset><button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+		</fieldset>
+		<div id="errorResult"></div>
+    </form>
+    </div>
+	</body>
+</html>
